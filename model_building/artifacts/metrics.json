@@ -1,0 +1,10 @@
+{
+  "accuracy": 0.9067796610169492,
+  "f1": 0.7240143369175627,
+  "best_params": {
+    "max_depth": null,
+    "min_samples_split": 2,
+    "n_estimators": 50
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n           0       0.92      0.97      0.94       667\n           1       0.84      0.64      0.72       159\n\n    accuracy                           0.91       826\n   macro avg       0.88      0.80      0.83       826\nweighted avg       0.90      0.91      0.90       826\n"
+}

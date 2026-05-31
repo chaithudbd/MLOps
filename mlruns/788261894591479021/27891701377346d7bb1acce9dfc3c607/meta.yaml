@@ -1,0 +1,14 @@
+artifact_uri: file:///content/mlruns/788261894591479021/27891701377346d7bb1acce9dfc3c607/artifacts
+end_time: 1780208169835
+entry_point_name: ''
+experiment_id: '788261894591479021'
+lifecycle_stage: active
+run_id: 27891701377346d7bb1acce9dfc3c607
+run_name: sassy-loon-519
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780208151154
+status: 3
+tags: []
+user_id: root

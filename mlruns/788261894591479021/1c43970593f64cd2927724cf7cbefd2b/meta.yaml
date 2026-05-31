@@ -1,0 +1,14 @@
+artifact_uri: file:///content/mlruns/788261894591479021/1c43970593f64cd2927724cf7cbefd2b/artifacts
+end_time: 1780211911601
+entry_point_name: ''
+experiment_id: '788261894591479021'
+lifecycle_stage: active
+run_id: 1c43970593f64cd2927724cf7cbefd2b
+run_name: debonair-horse-869
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780211894958
+status: 3
+tags: []
+user_id: root
