@@ -1,11 +1,8 @@
 import os
 from pathlib import Path
 from huggingface_hub import HfApi, login
-from dotenv import load_dotenv
 
 def main() -> None:
-
-    load_dotenv()
     hf_token = os.getenv("HF_TOKEN")
     dataset_repo_id = os.getenv(
         "HF_DATASET_REPO_ID", "ChaithuML/MLOps-Tourism-Prediction-Dataset"

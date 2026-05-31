@@ -3,17 +3,14 @@ from pathlib import Path
 import pandas as pd
 from huggingface_hub import HfApi, hf_hub_download, login
 from sklearn.model_selection import train_test_split
-from dotenv import load_dotenv
-
 
 
 def main() -> None:
-    load_dotenv()
     hf_token = os.getenv("HF_TOKEN")
     dataset_repo_id = os.getenv(
         "HF_DATASET_REPO_ID", "ChaithuML/MLOps-Tourism-Prediction-Dataset"
     )
-    
+
     if not hf_token:
         raise ValueError("HF_TOKEN is missing. Configure repository secret or .env.")
 

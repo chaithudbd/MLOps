@@ -1,12 +1,8 @@
 import os
 from pathlib import Path
 from huggingface_hub import HfApi, login
-from google.colab import userdata
-from dotenv import load_dotenv
-
 
 def main() -> None:
-    load_dotenv()
     hf_token = os.getenv("HF_TOKEN")
     space_id = os.getenv("HF_SPACE_ID", "ChaithuML/MLOps-Tourism-Package-Prediction")
 
@@ -24,7 +20,7 @@ def main() -> None:
         readme_path.write_text(
             "---\n"
             "title: AML Ops Tourism Package Prediction\n"
-            "emoji: ✈️\n"
+            "emoji: \u2708\ufe0f\n"
             "colorFrom: green\n"
             "colorTo: blue\n"
             "sdk: docker\n"

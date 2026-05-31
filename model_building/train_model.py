@@ -11,12 +11,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, f1_score
 from sklearn.model_selection import GridSearchCV
 from sklearn.preprocessing import LabelEncoder
-from dotenv import load_dotenv
-
 
 
 def main() -> None:
-    load_dotenv()
     hf_token = os.getenv("HF_TOKEN")
     dataset_repo_id = os.getenv(
         "HF_DATASET_REPO_ID", "ChaithuML/MLOps-Tourism-Prediction-Dataset"
@@ -24,7 +21,6 @@ def main() -> None:
     model_repo_id = os.getenv(
         "HF_MODEL_REPO_ID", "ChaithuML/MLOps-Tourism-Prediction-Model"
     )
-    
 
     if not hf_token:
         raise ValueError("HF_TOKEN is missing. Configure repository secret or .env.")
