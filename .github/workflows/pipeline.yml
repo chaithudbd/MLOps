@@ -52,6 +52,7 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
           HF_DATASET_REPO_ID: ${{ secrets.HF_DATASET_REPO_ID }}
           HF_MODEL_REPO_ID: ${{ secrets.HF_MODEL_REPO_ID }}
+          MLFLOW_TRACKING_URI: file:${{ github.workspace }}/mlruns # Explicitly set MLflow tracking URI
         run: python model_building/train_model.py
 
   deploy-hosting:
